@@ -47,7 +47,7 @@ public class MysqlService {
      * @return
      */
     public Page<MysqlEntity> findByNameContaining(String name, int page, int size){
-        Pageable pageable = PageRequest.of(page, size);
+        Pageable pageable = PageRequest.of(page-1, size);
         Page<MysqlEntity> entities = mysqlEntityRepository.findByNameContaining(name, pageable);
         return entities;
     }

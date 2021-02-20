@@ -6,7 +6,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Date;
-import java.util.List;
 
 public interface MysqlEntityRepository  extends CrudRepository<MysqlEntity, Long> {
     public Page<MysqlEntity> findByNameContaining(String name, Pageable pageable);
