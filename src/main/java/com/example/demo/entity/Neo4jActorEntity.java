@@ -19,6 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Neo4jActorEntity {
     @Id @GeneratedValue
+    @ApiModelProperty(value = "id", hidden = true)
     private Long id;
 
     @ApiModelProperty("姓名")

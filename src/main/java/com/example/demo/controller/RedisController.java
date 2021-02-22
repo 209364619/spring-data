@@ -26,4 +26,10 @@ public class RedisController {
     public String getRandom(@ApiParam(value = "键", example = "count")@RequestParam(value = "key")String key){
         return redisService.keyValueData(key);
     }
+
+    @ApiOperation(value = "根据key删除redis中数据")
+    @PostMapping("/{key}")
+    public boolean deleteByKey(@ApiParam(value = "redis中key")@PathVariable String key){
+        return redisService.deleteByKey(key);
+    }
 }
