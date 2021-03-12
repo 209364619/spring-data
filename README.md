@@ -34,7 +34,12 @@
  ### elasticsearch
  > elasticsearch starter中已注入ElasticsearchRestTemplate, 将使用JSONObject完成restful query body即可实现相关检索
 ```xml
-
+ 
 ```
  
  ### redis
+> redisTemplate读写
+### kafka
+> kafka消息订阅与消费
+### mybatis 
+> 添加pagehelper进行物理磁盘分页

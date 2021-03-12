@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@Api("Redis读写")
+@Api(tags = "Redis读写")
 @RestController
 @RequestMapping("/redis")
 public class RedisController {

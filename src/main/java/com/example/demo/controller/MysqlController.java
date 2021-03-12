@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
-@Api(value = "mysql操作")
+@Api(tags = "mysql jpa 完成数据读写")
 @RestController
 @RequestMapping("mysql")
 public class MysqlController {
@@ -29,7 +29,7 @@ public class MysqlController {
     }
 
     @PostMapping("/search")
-    public Page<MysqlEntity> findById(@RequestBody SearchBody searchBody) {
+    public Page<MysqlEntity> findByNameContaining(@RequestBody SearchBody searchBody) {
         return mysqlService.findByNameContaining(searchBody.getValue(),
                 searchBody.getPage(), searchBody.getSize());
     }

@@ -10,7 +10,7 @@ import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.web.bind.annotation.*;
 
 
-@Api(value = "Elasticsearch存取")
+@Api(value = "Elasticsearch存取", tags = "elasticsearch基本读写")
 @RestController
 @RequestMapping("es")
 public class EsController {

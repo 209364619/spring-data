@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Api("MongoDB读写")
+@Api(tags = "MongoDB读写")
 @RestController
 @RequestMapping("mongo")
 public class MongoController {

@@ -4,6 +4,7 @@ import com.example.demo.entity.Neo4jActorEntity;
 import com.example.demo.entity.Neo4jMovieEntity;
 import com.example.demo.request.SearchBody;
 import com.example.demo.service.Neo4jService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Api(tags = "neo4j读写关系查询")
 @RestController
 @RequestMapping("/neo4j")
 public class Neo4jController {
